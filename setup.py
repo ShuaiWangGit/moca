@@ -9,6 +9,6 @@ setup(name='moca',
       license='MIT',
       packages=['moca'],
       install_requires=[
-                'markdown',
+
             ],
       zip_safe=False)
