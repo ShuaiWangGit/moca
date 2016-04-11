@@ -8,4 +8,7 @@ setup(name='moca',
       author_email='sudapink@yeah.net',
       license='MIT',
       packages=['moca'],
+      install_requires=[
+                'markdown',
+            ],
       zip_safe=False)
