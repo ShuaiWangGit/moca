@@ -1,12 +1,19 @@
-import os
+from os import path,mkdir
+from glob import glob
+
 class mocaText:
-    def __init__(self,address=""):
+    def __init__(self,address="/data"):
         ##below part gets the valid folder path
-        cur_folder=os.getwd()
+        cur_folder=""
         print("block Generated")
         cur_path = cur_folder+address
-        assert os.path.exists(cur_path),"no valid folder occurs"
-        ##
-        
+        assert path.exists(cur_path),"no valid folder occurs"
+        ##get file names
+        files = sorted(glob(address+"/*.txt"))
+        cleanFiles(files)
+
+
 if __name__=="__main__":
-    Instance = mocaText()
+    absAddress="/Users/shuai_mac/Pycharm/MeganNZ/Original_data"
+    Instance = mocaText(address=absAddress)
+

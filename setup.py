@@ -1,5 +1,5 @@
 from setuptools import setup
-
+import re
 setup(name='moca',
       version='0.1',
       description='get and clean MOCA data newzealand',
@@ -9,6 +9,5 @@ setup(name='moca',
       license='MIT',
       packages=['moca'],
       install_requires=[
-
             ],
       zip_safe=False)
