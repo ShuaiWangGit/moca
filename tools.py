@@ -1,6 +1,6 @@
 from os import path,mkdir
 def write_to_txt(string_list,id,folder_address,sub_name):
-    directoryPath=folder_address+sub_name# ]
+    directoryPath=folder_address+sub_name
     if not path.exists(directoryPath):
         mkdir(directoryPath)
     order=0
@@ -12,5 +12,3 @@ def write_to_txt(string_list,id,folder_address,sub_name):
     l1=map(lambda x:x+'\n', string_list)
     f.writelines(l1)
     f.close()
-def cleanFiles():
-	pass

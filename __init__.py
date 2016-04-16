@@ -13,6 +13,8 @@ class mocaText:
         self.cleanFiles()
     def cleanFiles(self):
         for item in self.files:
+            fileID=item[:-4]
+            print(fileID)
             f_open=open(item,'r')
             lines=self.findLines(f_open)
             print(lines)
