@@ -5,3 +5,7 @@
 
 ### Intro
 ##### MOCA score is a socre to distingulish between normal people and people with disorders
+
+
+#### Original folder contains original files
+#### processed folder contains files which only the answer for most important childhood memory is created.
